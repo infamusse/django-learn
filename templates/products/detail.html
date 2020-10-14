@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  <h1>{{object.title}}</h1>
+  <p>Hi there, is product with ID(PK): {{object.id}}</p>
+  {% include 'products/detail_snippet.html' with product=object %}
+</div>
+{% endblock %}

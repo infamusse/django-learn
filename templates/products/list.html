@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% block content %} {% for object in object_list %}
+
+<div>
+  <a href="/products/{{object.id}}"> {{object.title}} </a>
+</div>
+{%endfor %} {% endblock %}
